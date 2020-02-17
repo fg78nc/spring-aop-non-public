@@ -20,9 +20,8 @@ import java.lang.reflect.Modifier;
 class MyAspect {
 
     @Before("execution(!public * com.fg7.aopdemo.another.pkg.AnotherClass.*(..))")
-
     public void myAdvice(JoinPoint joinPoint) {
-        System.out.println("Aspect intercepted call to " + joinPoint.getSignature().toLongString() + " method in " + joinPoint.getSignature().getDeclaringType());
+        System.out.println(" -> Aspect intercepted call to" + joinPoint.getSignature().toLongString() + " method in " + joinPoint.getSignature().getDeclaringType());
     }
 }
 

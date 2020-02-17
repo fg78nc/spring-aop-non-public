@@ -5,7 +5,7 @@ import org.springframework.aop.framework.AopContext;
 public class AnotherClass {
 
     void defaultAdvisedMethod() {
-        System.out.println("  AnotherClass.defaultAdvisedMethod() has been called");
+        System.out.println("AnotherClass.defaultAdvisedMethod() has been called");
     }
 
     protected void protectedAdvisedMethod() {
@@ -14,6 +14,6 @@ public class AnotherClass {
     }
 
      void internalTargetCallOnItself(){
-        System.out.println("   Internal method on itself has been called");
+        System.out.println("Internal method on itself has been called");
     }
 }
